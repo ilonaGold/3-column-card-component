@@ -1,6 +1,69 @@
-/* body {
+body, html {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(0, 0%, 95%);
+}
+
+.container {
+    margin: 90px 25px;
+    width: 100vw;
+}
+
+.card {
+    width: 325px;
+    height: 440px;
+    padding: 45px;
+}
+
+.first-card {
+    background: hsl(31, 77%, 52%);
+}
+
+.second-card {
+    background: hsl(184, 100%, 22%);
+}
+
+.third-card {
+    background: hsl(179, 100%, 13%);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin: 40px auto;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 85%;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+.btn {
+    background: hsl(0, 0%, 95%);
+    padding: 20px 35px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.btn-orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-cyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-dark-cyan {
+    color: hsl(179, 100%, 13%);
 }
 
 .attribution { 
@@ -10,4 +73,4 @@
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
- } */
+ }
