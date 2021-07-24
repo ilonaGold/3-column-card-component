@@ -1,3 +1,5 @@
+/* Global Styling */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -9,9 +11,27 @@ body {
     background: hsl(0, 0%, 95%);
 }
 
-.container {
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin: 40px auto;
+    text-transform: uppercase;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 85%;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+/* Card Styling */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 90px 25px;
-    width: 100vw;
 }
 
 .card {
@@ -22,6 +42,7 @@ body {
 
 .first-card {
     background: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0px 0px;
 }
 
 .second-card {
@@ -30,28 +51,22 @@ body {
 
 .third-card {
     background: hsl(179, 100%, 13%);
-}
-
-h1 {
-    font-family: 'Big Shoulders Display', cursive;
-    color: hsl(0, 0%, 95%);
-    margin: 40px auto;
-}
-
-p {
-    color: hsla(0, 0%, 100%, 0.75);
-    width: 85%;
-    letter-spacing: 1.5px;
-    line-height: 30px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .btn {
     background: hsl(0, 0%, 95%);
     padding: 20px 35px;
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     margin-top: 30px;
     font-weight: bold;
+}
+
+.btn:active {
+    border: 2px solid hsl(0, 0%, 95%);
+    color:  hsl(0, 0%, 95%);
+    background: inherit;
 }
 
 .btn-orange {
@@ -65,6 +80,36 @@ p {
 .btn-dark-cyan {
     color: hsl(179, 100%, 13%);
 }
+
+/* Media queries */
+
+ @media (min-width: 1024px) {
+    .card-container {
+        flex-direction: row; 
+    }
+    .first-card {
+        border-radius: 10px 0px 0px 10px;
+    }
+    .third-card {
+        border-radius: 0 10px 10px 0px;
+    }
+    p {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card-container {
+        flex-direction: row;
+        margin: 170px 260px 130px 265px; 
+    }
+    .card {
+        width: 300px;
+        height: 500px;
+    } 
+}
+
+/* Attribution Styling */
 
 .attribution { 
     font-size: 11px; 
