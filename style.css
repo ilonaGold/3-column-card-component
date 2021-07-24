@@ -63,10 +63,11 @@ p {
     font-weight: bold;
 }
 
-.btn:active {
+.btn:hover {
     border: 2px solid hsl(0, 0%, 95%);
     color:  hsl(0, 0%, 95%);
     background: inherit;
+    cursor: pointer;
 }
 
 .btn-orange {
